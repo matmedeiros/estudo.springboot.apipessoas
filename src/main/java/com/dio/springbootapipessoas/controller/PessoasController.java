@@ -10,6 +10,6 @@ public class PessoasController {
 
     @GetMapping
     public String getPessoas() {
-        return "API pessoas";
+        return "API pessoas versao 2";
     }
 }
