@@ -27,9 +27,7 @@ public class PessoasController {
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO inserePessoas(@RequestBody @Valid PessoaDTO pessoa) {
-
         return pessoaService.inserirPessoa(pessoa);
-
     }
 
     @GetMapping
@@ -38,7 +36,18 @@ public class PessoasController {
     }
 
     @GetMapping("/{id}")
-    public PessoaDTO getPessoa(@PathVariable  Long id) {
+    public PessoaDTO getPessoa(@PathVariable Long id) {
         return pessoaService.findById(id);
+    }
+
+    @PutMapping("/{id}")
+    public void removerPessoa(@PathVariable Long id, @RequestBody @Valid PessoaDTO pessoa) {
+        pessoaService.update(id, pessoa);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void removerPessoa(@PathVariable Long id) {
+        pessoaService.remove(id);
     }
 }
