@@ -10,7 +10,7 @@ Projeto utiliza o framework
 
 E o [Apache Maven](https://maven.apache.org/) como gerenciador de dependencias e responsável pelo build.
 
-Dependência Java 11
+Dependência Java 17
 
 ## Utilização
 
