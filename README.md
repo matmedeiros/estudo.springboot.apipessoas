@@ -12,6 +12,8 @@ E o [Apache Maven](https://maven.apache.org/) como gerenciador de dependencias e
 
 Dependência Java 17
 
+Novo teste no projeto.
+
 ## Utilização
 
 ```
