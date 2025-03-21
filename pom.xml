@@ -12,7 +12,7 @@
 	<artifactId>springboot-apipessoas</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-apipessoas</name>
-	<description>Projeto API pessoas springboot DIO</description>
+	<description>Projeto API pessoas springboot teste</description>
 	<properties>
 		<java.version>17</java.version>
 		<mapstruct.version>1.4.2.Final</mapstruct.version>
